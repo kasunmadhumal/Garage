@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/HomeFragment">
+
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.assessment_4662576_and_4645639.HomeFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_first">
+
+
+        <action
+            android:id="@+id/action_HomeFragment_to_CheckCarFragment"
+            app:destination="@id/CheckCarFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_AddCarFragment"
+            app:destination="@id/AddCarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/AddCarFragment"
+        android:name="com.example.assessment_4662576_and_4645639.AddCarFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+
+        <action
+            android:id="@+id/action_AddCarFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/CheckCarFragment"
+        android:name="com.example.assessment_4662576_and_4645639.CheckCarFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_check_car">
+
+
+        <action
+            android:id="@+id/action_CheckCarFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+    </fragment>
+</navigation>

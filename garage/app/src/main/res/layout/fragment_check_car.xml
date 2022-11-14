@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    tools:context=".CheckCarFragment">
+
+
+    <Button
+        android:id="@+id/check_car_interface_check_car_button"
+        android:layout_width="138dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="136dp"
+        android:text="@string/check_car_button_home"
+        android:backgroundTint="#2079C1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_car_interface_model_input" />
+
+    <TextView
+        android:id="@+id/check_car_interface_tittle"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/check_car_interface_title_value"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="209dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="31dp"
+        android:contentDescription="@string/car_image"
+        android:src="@drawable/car1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_car_interface_tittle" />
+
+
+    <TextView
+        android:id="@+id/check_car_interface_model_label"
+        android:layout_width="92dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="29dp"
+        android:text="@string/car_model_label"
+        app:layout_constraintEnd_toStartOf="@+id/check_car_interface_model_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_car_interface_brand_label" />
+
+    <TextView
+        android:id="@+id/check_car_interface_brand_label"
+        android:layout_width="92dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/car_brand_label"
+        app:layout_constraintEnd_toStartOf="@+id/check_car_interface_brand_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/check_car_interface_price_label"
+        android:layout_width="92dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="144dp"
+        android:text="@string/car_price_label"
+        app:layout_constraintEnd_toStartOf="@+id/check_car_interface_car_price_input"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_car_interface_model_label" />
+
+    <EditText
+        android:id="@+id/check_car_interface_brand_input"
+        android:layout_width="225dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="25dp"
+        android:autofillHints=""
+        android:hint="@string/hint"
+        android:inputType="text"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/check_car_interface_brand_label"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <EditText
+        android:id="@+id/check_car_interface_model_input"
+        android:layout_width="225dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="29dp"
+        android:autofillHints=""
+        android:inputType="text"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/check_car_interface_model_label"
+        app:layout_constraintTop_toBottomOf="@+id/check_car_interface_brand_input" />
+
+    <EditText
+        android:id="@+id/check_car_interface_car_price_input"
+        android:layout_width="225dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="38dp"
+        android:autofillHints=""
+        android:inputType="text"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/check_car_interface_price_label"
+        app:layout_constraintTop_toBottomOf="@+id/check_car_interface_check_car_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

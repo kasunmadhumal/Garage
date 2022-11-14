@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">assessment_4662576_and_4645639</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">assessment_4662576_and_4645639</string>
+    <string name="second_fragment_label">assessment_4662576_and_4645639</string>
+    <string name="add_car_button_home">ADD CAR</string>
+    <string name="check_car_button_home">CHECK CAR</string>
+    <string name="add_car_button_adding_interface">ADD CAR</string>
+    <string name="check_price_button_check_car_interface">CHECK PRICE</string>
+
+    <string name="home_view_title">CAR GARAGE</string>
+    <string name="car_brand_label">Car Brand</string>
+    <string name="car_model_label">Car Model</string>
+    <string name="car_price_label">Car Price</string>
+
+    <string name="add_car_interface_title_value">ADD CAR</string>
+    <string name="check_car_interface_title_value">CHECK CAR</string>
+
+    <string name="car_image">car image showing</string>
+    <string name="hint"> </string>
+
+
+
+</resources>
